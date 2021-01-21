@@ -2,7 +2,7 @@
 
 This assignment will introduce you to graphics programming in OpenGL and the GLSL shading language. During the first lab session, you can also get help from the lab instructors to set up a working development environment for C++ and OpenGL.
 
-The starting code for the model viewer that we will extend for this and the other assignments is available on GitHub. If you do not already have the tool Git installed, you can either download it from [here](https://git-scm.com) or install it from your OS's package manager. To clone the model viewer's repository from the command line, run
+The starting code for the model viewer that we will extend for this and the other assignments is available [here](https://github.com/cg-uu/gltf_viewer) on GitHub. If you do not already have the tool Git installed, you can either download it from [here](https://git-scm.com) or install it from your OS's package manager. To clone the model viewer's repository from the command line, run
 
     git clone https://github.com/cg-uu/gltf_viewer.git
 
