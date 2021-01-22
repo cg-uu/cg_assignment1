@@ -28,7 +28,7 @@ Tip 1: If you use Visual Studio and the GLSL shader files (*.vert and *.frag) ar
 
 Tip 2: On Windows 10, you can change environment variables by opening the start menu and searching for `Edit environment variables for your account`. On Linux and macOS, you can just set it from the command line, for example to the current directory you are in:
 
-    export $MODEL_VIEWER_ROOT=$PWD
+    export MODEL_VIEWER_ROOT=$PWD
 
 Tip 3: You can reload shaders on-the-fly during program execution by pressing `R` (the GLFW window must be in focus). This allows you to edit and debug shader code without having to recompile the C++ host program!
 
