@@ -78,7 +78,7 @@ Since only one side of the cube is visible, we will add interaction with a virtu
 
 In `draw_scene()` in `model_viewer.cpp`, create a new variable for the rotation matrix from the trackball
 
-    mat4 view = glm::mat4(ctx.trackball.orient);
+    glm::mat4 view = glm::mat4(ctx.trackball.orient);
 
 After declaring a corresponding uniform variable `u_view` of same type in the vertex shader, you also need to pass the uniform mat4 value to the shader with
 
