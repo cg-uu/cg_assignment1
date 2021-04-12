@@ -54,7 +54,7 @@ You may wonder why `a_position` and `gl_Position` are 4D vectors when the object
 
 Instead of defining the output color in the fragment shader, pass the color as a varying `vec3` variable (call it `v_color`) from the vertex shader to the fragment shader using the out qualifiers. You may look in the slides from the second lecture of the course for examples how you should declare new varying variables.
 
-So far, you have rendered triangles by fetching only a single attribute (position) from the vertex buffer. Open the file `gltf_render.cpp` and look in the function `create_drawables_from_asset()` how the vertex format of the vertex buffer is specified. To enable a second attribute (color), in the vertex shader, declare a new input variable a_color similar to `a_position`, but with a different location index (look in `gltf_render.h` for this index value). Finally, access `a_color` in `main()` in the vertex shader and set `v_color` to `a_color`. What happens with the colors when they are passed to the fragment shader?
+So far, you have rendered triangles by fetching only a single attribute (position) from the vertex buffer. Open the file `gltf_render.cpp` and look in the function `create_drawables_from_gltf_asset()` how the vertex format of the vertex buffer is specified. To enable a second attribute (color), in the vertex shader, declare a new input variable a_color similar to `a_position`, but with a different location index (look in `gltf_render.h` for this index value). Finally, access `a_color` in `main()` in the vertex shader and set `v_color` to `a_color`. What happens with the colors when they are passed to the fragment shader?
 
  
 ## Part 3 - Uniform variables and animation
