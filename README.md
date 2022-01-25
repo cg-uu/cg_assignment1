@@ -42,7 +42,7 @@ Compile and run the model viewer. By default, the viewer will load the file `tri
 Browse through the source code in `model_viewer.cpp`, `mesh.vert`, and `mesh.frag` and try to figure out what the different parts of the code does. Then, complete the following tasks:
 
 - Change the color of the background by modifying the arguments to [glClearColor()](http://docs.gl/gl3/glClearColor). You can also try to change the size of the window by modifying the width and height variables.
-- Change the color of the triangle by modifying the `vec4` vector assigned to `frag_color` in the fragment shader `mesh.frag`. This variable determines the output color of the processed fragment. It is a vector with four components (red, blue, green, alpha), where each component has a value between 0.0 and 1.0.
+- Change the color of the triangle by modifying the `vec4` vector assigned to `frag_color` in the fragment shader `mesh.frag`. This variable determines the output color of the processed fragment. It is a vector with four components (red, green, blue, alpha), where each component has a value between 0.0 and 1.0.
 - `gl_Position` is a built-in variable that determines the output position (x, y, z, w) of the processed vertex. The current version of triangle.vert just sets `gl_Position` to the incoming vertex position a_position. What happens if you instead set `gl_Position` to vec4(-a_position.xyz, 1.0)?
 
 You may wonder why `a_position` and `gl_Position` are 4D vectors when the objects we render are two- or three-dimensional. The lectures about viewing and transformations will explain this, but for now you can just ignore the fourth component and set it to 1.0.
